@@ -1,0 +1,26 @@
+FRY SPOT WEBSITE — GITHUB PAGES & HOSTING INSTRUCTIONS
+=====================================================
+
+This corrected package uses relative asset paths. It works from a GitHub Pages
+repository subfolder such as username.github.io/repository-name/ and from a
+normal domain document root.
+
+GITHUB PAGES
+------------
+1. Extract fry-spot-hosting-ready.zip on your computer.
+2. Remove the old website files from your GitHub repository.
+3. Upload all extracted files and folders to the repository root.
+4. Confirm index.html, .nojekyll, assets/, and the two PNG files are in the root.
+5. Open GitHub repository > Settings > Pages.
+6. Under Build and deployment select Deploy from a branch.
+7. Select the main branch and /(root), then click Save.
+8. Wait for deployment to finish, then hard-refresh with Ctrl+F5.
+
+CPANEL / SHARED HOSTING
+-----------------------
+1. Open cPanel > File Manager > public_html.
+2. Upload and extract fry-spot-hosting-ready.zip inside public_html.
+3. Make sure index.html is directly inside public_html.
+4. Enable Show Hidden Files to confirm .htaccess exists.
+
+This is a static website. It needs no PHP, Node.js, npm, or database.
